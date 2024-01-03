@@ -17,6 +17,7 @@ vector<int>v;
 while (true)
 {
     int d;
+    cout<<"Enter:";
     cin>>d;
     v.push_back(d);
     cout<<"capacity:"<<v.capacity()<<" size:"<<v.size()<<endl;
