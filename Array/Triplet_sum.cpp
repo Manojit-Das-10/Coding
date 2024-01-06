@@ -51,7 +51,7 @@ int main()
 {
 int A[]={1,4,6,10,8,45};
 int n = 6;
-int X=13;
+int X=18;
 solution s;  // Create an object of the solution class
     if (s.find3Numbers(A, n, X))
     {
