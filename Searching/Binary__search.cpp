@@ -27,13 +27,13 @@ int expontial(vector<int>arr,int x){
 
 int main(){
     vector<int>arr{3,4,5,6,11,13,15,33,56,70};
-    int x= 33;
-    // int ans=expontial(arr,x);
-    if(expontial(arr,x)==1)
+    int x= 560;
+    int ans=expontial(arr,x);
+    if(ans==1)
     {
         cout<<"True"<<endl;
     }
-    else
+    else if(ans==0)
     {
         cout<<"False";
     }
