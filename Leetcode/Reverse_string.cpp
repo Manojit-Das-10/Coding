@@ -16,7 +16,7 @@ public:
             reversed += word + " ";
         }
 
-        // Remove the trailing space, if any
+        // Remove the trailing space, if any word is 
         if (!reversed.empty()) {
             reversed.pop_back();
         }
