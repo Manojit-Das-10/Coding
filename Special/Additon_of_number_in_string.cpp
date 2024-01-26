@@ -48,7 +48,10 @@ class Solution{
 
 int main()
 {
-
-
+int a[] = {9, 9, 9};
+int b[] = {1, 2, 3};
+Solution s;
+string result = s.calc_Sum(a, 3, b, 3);
+cout << result << endl;
 return 0;
 }
