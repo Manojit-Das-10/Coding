@@ -19,6 +19,12 @@ public:
 int main()
 {
 
+vector<int> nums = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
+
+    Solution solution;
+    int maxSubArraySum = solution.maxSubArray(nums);
+
+    cout << "Maximum subarray sum: " << maxSubArraySum << endl;
 
 return 0;
 }
