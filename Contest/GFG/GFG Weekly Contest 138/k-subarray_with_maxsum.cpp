@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
-
+//T.C.- O(t * n * k)
+//A.S.- O(n)
 class Solution {
 public:
     long long kMaxSubarray(int n, int k, vector<int> &arr) {

@@ -25,6 +25,23 @@ class Solution {
 int main()
 {
 
+int n;
+cout << "Enter the size of the array: ";
+cin >> n;
+
+int arr[n];
+cout << "Enter " << n << " elements of the array: "<<endl;
+for (int i = 0; i < n; i++) {
+    cin >> arr[i];
+ }
+
+Solution obj;
+int result = obj.firstRepeated(arr, n);
+if (result != -1) {
+    cout << "First repeating element is " <<arr[result] <<" at index :" << result   << endl;
+} else {
+    cout << "No repeating element found." << endl;
+}
 
 return 0;
 }
