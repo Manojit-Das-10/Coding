@@ -1,7 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-
 class Solution {
 public:
     vector<int> findClosestElements(vector<int>& arr, int k, int x) {
@@ -16,12 +15,14 @@ public:
                 h--;
             }
         }
-        vector<int>ans;
-        for(int i=l ; i<=h; i++)
-        {
-            ans.push_back(arr[i]);
-        }
-        return ans;
+        // vector<int>ans;
+        // for(int i=l ; i<=h; i++)
+        // {
+        //     ans.push_back(arr[i]);
+        // }
+        // return ans;
+
+        return vector<int>(arr.begin()+l , arr.begin()+h+1);
     }
 };
 
