@@ -5,18 +5,18 @@ class Solution
 {
     public:
     
-    bool isPossibleSolution(int A[], int N, int M, int sol)
+    bool isPossibleSolution(int A[], int N, int M, int mid)
     {
         int pagesum = 0;
         int c = 1;
         for(int i=0; i<N; i++)
         {
-            if(A[i]>sol)
+            if(A[i]>mid)
             {
                 return false;
             }
             
-            else if (pagesum + A[i] > sol)
+            else if (pagesum + A[i] > mid)
             {
                 c++;
                 pagesum = A[i];
