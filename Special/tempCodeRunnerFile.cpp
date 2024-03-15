@@ -1,1 +1,1 @@
-cout << "Square root of " << x << " is: " << result <<endl;
+cout<<palindrome(sen);
