@@ -33,19 +33,17 @@ void replacesentence(char sentence[])
     }
 }
 
-// void newlinewords(char sen[],char ans[])
-// {
-//     int n = strlen(sen);
-//     for (int i = 0; i < n; i++)
-//     {
-//         if(sen[i]==' ')
-//         {
-//             cin>>ans;
-//             cout<<endl;
-//         }
-//     }
-//     return ans[];
-// }
+void newlinewords(char sen[])
+{
+    int n = strlen(sen);
+    for (int i = 0; i < n; i++)
+    {
+        if(sen[i]==' ')
+        {
+           sen[i]='\n';
+        }
+    }
+}
 
 void converttouppercase(char arr[])
 {
@@ -124,15 +122,25 @@ int main()
 // cout<<sentence<<endl;
 
 // char sen[100];
-// char ans[50];
 // cin.getline(sen,90);
-// newlinewords(sen,ans);
+// newlinewords(sen);
 // cout<<sen;
 
-char arr[100];
-cin>>arr;
-converttouppercase(arr);
-cout<<arr<<endl;
+// char arr[100];
+// cin>>arr;
+// converttouppercase(arr);
+// cout<<arr<<endl;
+
+char name[10];
+for (int i = 0; i < 10; i++)
+{
+    char m;
+    cin>>m;
+    name[i]=m;
+}
+
+int n = strlen(name);
+cout<<name;
 
 return 0;
 }
