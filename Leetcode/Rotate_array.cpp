@@ -15,9 +15,22 @@ public:
     }
 };
 
-int main()
-{
+int main() {
+    Solution sol;
 
+    // Test with sample vector and value of k
+    vector<int> nums = {1, 2, 3, 4, 5, 6, 7}; // Sample vector
+    int k = 3; // Value of k
 
-return 0;
+    // Call the rotate method
+    sol.rotate(nums, k);
+
+    // Print the rotated vector
+    cout << "Rotated Vector:" << endl;
+    for (int val : nums) {
+        cout << val << " ";
+    }
+    cout << endl;
+
+    return 0;
 }

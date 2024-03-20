@@ -33,9 +33,21 @@ public:
     
 };
 
-int main()
-{
+int main() {
+    Solution sol;
 
+    // Test with sample vector
+    vector<int> nums = {2, 0, 2, 1, 1, 0}; // Sample vector
 
-return 0;
+    // Call the sortColors method
+    sol.sortColors(nums);
+
+    // Print the sorted vector
+    cout << "Sorted colors vector:" << endl;
+    for (int val : nums) {
+        cout << val << " ";
+    }
+    cout << endl;
+
+    return 0;
 }

@@ -29,8 +29,19 @@ public:
 };
 
 
-int main()
-{
+int main() {
+    Solution sol;
 
-return 0;
+    // Test with sample vectors
+    vector<int> nums1 = {1, 2, 3, 4, 5};
+    vector<int> nums2 = {3, 4, 5, 6, 7};
+
+    // Call the findIntersectionValues function
+    vector<int> intersectionValues = sol.findIntersectionValues(nums1, nums2);
+
+    // Print the counts of intersection values in both vectors
+    cout << "Count of intersection values in nums1: " << intersectionValues[0] << endl;
+    cout << "Count of intersection values in nums2: " << intersectionValues[1] << endl;
+
+    return 0;
 }

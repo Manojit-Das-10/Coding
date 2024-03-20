@@ -26,9 +26,17 @@ public:
     }
 };
 
-int main()
-{
+int main() {
+    Solution sol;
 
+    // Test with sample vector of details
+    vector<string> details = {"John 01-01-1950", "Alice 05-12-1965", "Bob 03-02-1940"};
 
-return 0;
+    // Call the countSeniors function
+    int seniorsCount = sol.countSeniors(details);
+
+    // Print the count of seniors
+    cout << "Number of seniors: " << seniorsCount << endl;
+
+    return 0;
 }

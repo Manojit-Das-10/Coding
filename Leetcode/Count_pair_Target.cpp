@@ -21,6 +21,17 @@ public:
 
 int main()
 {
+Solution sol;
+
+    // Test with sample vector and target value
+    vector<int> nums = {1, 3, 5, 7, 9}; // Sample vector
+    int target = 10;
+
+    // Call the countPairs function
+    int result = sol.countPairs(nums, target);
+
+    // Print the count of pairs whose sum is less than the target
+    cout << "Count of pairs whose sum is less than " << target << ": " << result << endl;
 
 
 return 0;

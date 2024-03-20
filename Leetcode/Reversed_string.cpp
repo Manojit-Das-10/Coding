@@ -22,9 +22,15 @@ public:
     }
 };
 
-int main()
-{
+int main() {
+    Solution sol;
 
+    // Test with sample vector of strings
+    vector<string> words = {"abcd", "dcba", "tac", "cat", "dog", "god"}; // Sample vector
+    int pairsCount = sol.maximumNumberOfStringPairs(words);
 
-return 0;
+    // Print the count of pairs
+    cout << "Count of pairs with reversed strings: " << pairsCount << endl;
+
+    return 0;
 }

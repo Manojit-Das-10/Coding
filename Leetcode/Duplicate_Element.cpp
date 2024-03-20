@@ -20,9 +20,21 @@ public:
      
     }
 };
-int main()
-{
+int main() {
+    Solution sol;
 
+    // Test with sample vector
+    vector<int> nums = {1, 1, 2, 2, 3, 4, 4, 5}; // Sample vector
+    int newSize = sol.removeDuplicates(nums);
 
-return 0;
+    // Print the modified vector and its new size
+    cout << "Modified vector after removing duplicates: ";
+    for (int i = 0; i < newSize; ++i) {
+        cout << nums[i] << " ";
+    }
+    cout << endl;
+
+    cout << "New size of the vector: " << newSize << endl;
+
+    return 0;
 }

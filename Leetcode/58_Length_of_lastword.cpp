@@ -27,6 +27,10 @@ public:
 int main()
 {
 
-
+Solution sol;
+// Test with sample string
+string s = "Hello World";
+int result = sol.lengthOfLastWord(s);
+cout << "Length of last word: " << result << endl;
 return 0;
 }

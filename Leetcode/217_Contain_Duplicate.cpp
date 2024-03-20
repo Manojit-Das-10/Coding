@@ -18,7 +18,17 @@ public:
 
 int main()
 {
+Solution sol;
 
+    // Test with sample vector
+    vector<int> nums = {1, 2, 3, 1}; // Sample vector containing duplicates
+    bool result = sol.containsDuplicate(nums);
+
+    if (result) {
+        cout << "The vector contains duplicates." << endl;
+    } else {
+        cout << "The vector does not contain duplicates." << endl;
+    }
 
 return 0;
 }

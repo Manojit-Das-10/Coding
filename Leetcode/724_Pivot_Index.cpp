@@ -57,7 +57,14 @@ public:
 
 int main()
 {
-
+    vector<int> nums = {1, 7, 3, 6, 5, 6};
+    Solution sol;
+    int result = sol.pivotIndex(nums);
+    if (result != -1) {
+        cout << "Pivot index found at position: " << result << endl;
+    } else {
+        cout << "No pivot index found." << endl;
+    }
 
 return 0;
 }

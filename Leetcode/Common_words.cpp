@@ -25,7 +25,21 @@ public:
 
 int main()
 {
+Solution sol;
 
+    // Test with sample vector of strings
+    vector<string> words = {"apple", "banana", "orange", "grape", "kiwi"};
+    char x = 'a';
+
+    // Call the findWordsContaining function
+    vector<int> result = sol.findWordsContaining(words, x);
+
+    // Print the indices of words containing the character 'x'
+    cout << "Indices of words containing the character '" << x << "':" << endl;
+    for (int index : result) {
+        cout << index << " ";
+    }
+    cout << endl;
 
 return 0;
 }

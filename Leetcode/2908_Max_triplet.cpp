@@ -34,6 +34,17 @@ public:
 };
 int main()
 {
+Solution sol;
+
+    // Test with sample vector
+    vector<int> nums = {1, 3, 2, 4, 5}; // Sample vector
+    int result = sol.minimumSum(nums);
+
+    if (result == -1) {
+        cout << "There are no such elements that satisfy the conditions." << endl;
+    } else {
+        cout << "Minimum sum of elements satisfying the conditions: " << result << endl;
+    }
 
 
 return 0;

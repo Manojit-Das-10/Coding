@@ -25,9 +25,15 @@ public:
     }
 };
 
-int main()
-{
+int main() {
+    Solution sol;
 
+    // Test with sample string
+    string s = "Let's take LeetCode contest"; // Sample string
+    string reversed = sol.reverseWords(s);
 
-return 0;
+    // Print the reversed string
+    cout << "Reversed words: " << reversed << endl;
+
+    return 0;
 }

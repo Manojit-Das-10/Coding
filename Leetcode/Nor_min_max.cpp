@@ -14,9 +14,19 @@ public:
     }
 };
 
-int main()
-{
+int main() {
+    Solution sol;
 
+    // Test with sample vector
+    vector<int> nums = {2, 1, 3}; // Sample vector
+    int nonMinOrMax = sol.findNonMinOrMax(nums);
 
-return 0;
+    // Print the non-minimum and non-maximum element
+    if (nonMinOrMax == -1) {
+        cout << "The vector does not contain enough elements." << endl;
+    } else {
+        cout << "Non-minimum and non-maximum element: " << nonMinOrMax << endl;
+    }
+
+    return 0;
 }

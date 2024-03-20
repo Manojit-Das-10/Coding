@@ -22,9 +22,27 @@ public:
     }
 };
 
-int main()
-{
+int main() {
+    Solution sol;
 
+    // Test with a sample matrix
+    vector<vector<int>> matrix = {
+        {1, 2, 3},
+        {4, 5, 6},
+        {7, 8, 9}
+    };
 
-return 0;
+    // Call the rotate method
+    sol.rotate(matrix);
+
+    // Print the rotated matrix
+    cout << "Rotated Matrix:" << endl;
+    for (const auto& row : matrix) {
+        for (int val : row) {
+            cout << val << " ";
+        }
+        cout << endl;
+    }
+
+    return 0;
 }

@@ -19,9 +19,17 @@ public:
     }
 };
 
-int main()
-{
+int main() {
+    Solution sol;
 
+    // Test with sample vector of strings
+    vector<string> strs = {"flower", "flow", "flight"};
 
-return 0;
+    // Call the longestCommonPrefix function
+    string result = sol.longestCommonPrefix(strs);
+
+    // Print the longest common prefix
+    cout << "Longest common prefix: " << result << endl;
+
+    return 0;
 }

@@ -27,9 +27,17 @@ public:
     }
 };
 
-int main()
-{
+int main() {
+    Solution sol;
 
+    // Test with sample string
+    string s = "011101"; // Sample string
 
-return 0;
+    // Call the maxScore method
+    int maxScore = sol.maxScore(s);
+
+    // Print the maximum score
+    cout << "Maximum score: " << maxScore << endl;
+
+    return 0;
 }

@@ -25,9 +25,15 @@ public:
     }
 };
 
-int main()
-{
+int main() {
+    Solution sol;
 
+    // Test with sample vector
+    vector<int> nums = {1, 3, 4, 2, 2}; // Sample vector
+    int duplicate = sol.findDuplicate(nums);
 
-return 0;
+    // Print the duplicate element found
+    cout << "Duplicate element in the vector: " << duplicate << endl;
+
+    return 0;
 }

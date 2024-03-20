@@ -38,9 +38,15 @@ public:
     }
 };
 
-int main()
-{
+int main() {
+    Solution sol;
 
+    // Test with sample vector
+    vector<int> nums = {3, 0, 1}; // Sample vector
+    int missing = sol.missingNumber(nums);
 
-return 0;
+    // Print the missing number
+    cout << "Missing number: " << missing << endl;
+
+    return 0;
 }

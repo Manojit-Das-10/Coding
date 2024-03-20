@@ -17,9 +17,18 @@ public:
 };
 
 
-int main()
-{
+int main() {
+    Solution sol;
 
+    // Test with sample vector and value of k
+    vector<int> nums = {2, 3, 1}; // Sample vector
+    int k = 5; // Sample value of k
 
-return 0;
+    // Call the maximizeSum function
+    int result = sol.maximizeSum(nums, k);
+
+    // Print the maximized sum
+    cout << "Maximized sum: " << result << endl;
+
+    return 0;
 }

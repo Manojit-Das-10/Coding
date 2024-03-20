@@ -17,9 +17,17 @@ public:
     }
 };
 
-int main()
-{
+int main() {
+    Solution sol;
 
+    // Test with sample vector
+    vector<int> nums = {1, 2, 3, 4, 5}; // Sample vector
 
-return 0;
+    // Call the sumOfSquares method
+    int result = sol.sumOfSquares(nums);
+
+    // Print the result
+    cout << "Sum of squares of numbers divisible by their index: " << result << endl;
+
+    return 0;
 }

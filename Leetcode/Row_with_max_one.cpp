@@ -32,8 +32,22 @@ public:
     }
 };
 
-int main()
-{
+int main() {
+    Solution sol;
+
+    // Test with a sample matrix
+    vector<vector<int>> mat = {
+        {0, 1, 1, 1},
+        {0, 0, 1, 1},
+        {1, 1, 1, 1},
+        {0, 0, 0, 0}
+    };
+
+    // Call the rowAndMaximumOnes method
+    vector<int> result = sol.rowAndMaximumOnes(mat);
+
+    // Print the result
+    cout << "Row with maximum ones: " << result[0] << ", Maximum ones count: " << result[1] << endl;
 
     return 0;
 }
