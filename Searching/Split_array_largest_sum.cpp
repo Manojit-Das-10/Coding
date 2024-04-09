@@ -46,7 +46,7 @@ public:
 
 int main()
 {
-Solution sol;
+Solution so;
 vector<int>nums;
 int n;
 cout<<"Enter the array size:";
@@ -60,7 +60,7 @@ for (int i = 0; i < n; i++)
 int K;
 cout<<"Split sub-array size:";
 cin>>K;
-int ans = sol.splitArray(nums,K);
+int ans = so.splitArray(nums,K);
 cout<<"The Max sum of Split array is:"<<ans<<endl;
 return 0;
 }
