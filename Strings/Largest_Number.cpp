@@ -4,6 +4,9 @@ using namespace std;
 class Solution {
 public:
 
+    // Time Complexity: O(n log n)
+    // Space Complexity: O(n)
+
     static bool mycomp(string a,string b){
         string t1=a+b;
         string t2=b+a;
