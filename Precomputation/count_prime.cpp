@@ -1,6 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// time complexity is O(n * log(log(n))) 
+//  the space complexity is O(n)
+// Sieve of Eratosthenes approach
+
 class Solution {
 public:
     int countPrimes(int n) {
