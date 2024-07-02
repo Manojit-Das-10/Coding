@@ -11,7 +11,7 @@ cout<<n<<" ";
 
 // Recursive Relational
 printCounting(n-1);
-
+ 
 }
 
 int main()
