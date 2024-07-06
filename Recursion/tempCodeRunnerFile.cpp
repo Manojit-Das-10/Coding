@@ -1,1 +1,1 @@
-cout<<"Answer is: "<<ans<<endl;
+maxi
