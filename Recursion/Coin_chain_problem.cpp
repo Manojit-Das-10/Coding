@@ -24,7 +24,7 @@ int solve(vector<int>&arr , int target){
 
 int main()
 {
-vector<int>arr{1,2};
+vector<int>arr{1,2,3};
 int target = 5;
 
 int ans = solve(arr,target);
