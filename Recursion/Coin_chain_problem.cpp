@@ -24,11 +24,11 @@ int solve(vector<int>&arr , int target){
 
 int main()
 {
-vector<int>arr{1,2,3};
+vector<int>arr{2,1};
 int target = 5;
 
 int ans = solve(arr,target);
-cout<<"The answer is: "<<ans<<endl;
+cout<<"Minimum no of coin required: "<<ans<<endl;
 
 return 0;
 }
