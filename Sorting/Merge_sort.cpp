@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// TC - O(nlogn) & O(n)
+
 void merge(int *arr, int s, int e) {
     int mid = (s + e) / 2;
 
