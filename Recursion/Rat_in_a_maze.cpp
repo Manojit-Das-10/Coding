@@ -1,6 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+int dx[4] = {1,0,0,-1};
+int dy[4] = {0,-1,1,0};
+char direction[4] = {'D','L','R','U'};
 
 bool isSafe(int x , int y , int maze[][4] , int row , int col , vector<vector<bool>>&visited){
     if(
@@ -23,8 +26,23 @@ void mazeHelper(int maze[][4] , int col , int row , int i , int j , vector<vecto
         return;
     }
 
+    for (int k = 0; k < 4; k++)
+    {
+       int newx = i + dx[k];
+       int newy = j + dy[k];
+       char dir = direction[k];
+       if(isSafe(newx,newy,maze,row,col,visited)){
+            visited[newx][newy] = true;
+            mazeHelper(maze,col,row,newx,newy,visited,path,output+dir);
+            // Backtraking
+            visited[newx][newy] = false;       
+        }
+    }
+    
+
     // Solve one case
 
+    /*
     // Down - i+1,j 
     if(isSafe(i+1,j,maze,row,col,visited)){
         visited[i+1][j] = true;
@@ -57,7 +75,7 @@ void mazeHelper(int maze[][4] , int col , int row , int i , int j , vector<vecto
         // Backtraking
         visited[i-1][j] = false;       
     }
-
+    */
 }
 
 int main() {
