@@ -88,7 +88,8 @@ int main() {
     cout << "Paths to reach the end are:" << endl;
     if (paths.empty()) {
         cout << "No path exists" << endl;
-    } else {
+    } 
+    else {
         for (const string& path : paths) {
             cout << path << endl;
         }
