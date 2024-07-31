@@ -62,8 +62,6 @@ public:
     }
 
 
-
-
     vector<vector<string>> solveNQueens(int n) {
         vector<vector<string>>ans;
         vector<vector<char>> board(n, vector<char>(n, '.'));
