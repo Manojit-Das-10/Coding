@@ -22,6 +22,8 @@ bool isSafe(int row, int col, vector<vector<char>>& board, int n) {
     if(leftRowCheck[row] == true|| upperLeftDiagonalCheck[n-1+(col-row)] == true || bottomLeftDiagonalCheck[col+row] == true){
         return false;
     }
+
+    return true;
     
     // Check for left row
     // int i = row;
@@ -55,7 +57,7 @@ bool isSafe(int row, int col, vector<vector<char>>& board, int n) {
     //     j--;
     // }
 
-    return true;
+    // return true;
 }
 
 void solve(vector<vector<char>>& board, int col, int n) {
