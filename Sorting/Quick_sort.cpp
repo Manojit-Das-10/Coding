@@ -1,64 +1,52 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-// TC- O(nlogn)
-
-int partition(int* arr, int s, int e) {
-    int pivot = arr[s];
-    int count = 0;
-    
-    // Count elements less than pivot
-    for (int i = s + 1; i <= e; i++) {
-        if (arr[i] <= pivot) {
-            count++;
+void quickSort(vector<int>&a, int start, int end)
+    {
+        // Base case
+        if(start >= end){
+            return;
         }
+        
+        int pivot = end;
+        int i = start - 1;
+        int j = start;
+        
+        while(j < pivot){
+            if(a[j] < a[pivot]){
+                ++i;
+                swap(a[i],a[j]);
+            }
+            j++;
+        }
+        
+        i++;
+        swap(a[i],a[end]);
+        quickSort(a,start,i-1);
+        quickSort(a,i+1,end);
+
+        
     }
-
-    // Place pivot at the correct position
-    int pivotIndex = s + count;
-    swap(arr[pivotIndex], arr[s]);
-
-    // Partition the array
-    int i = s, j = e;
-    while (i < pivotIndex && j > pivotIndex) {
-        while (arr[i] <= pivot) {
-            i++;
-        }
-        while (arr[j] > pivot) {
-            j--;
-        }
-        if (i < pivotIndex && j > pivotIndex) {
-            swap(arr[i++], arr[j--]);
-        }
-    }
-
-    return pivotIndex;
-}
-
-void quickSort(int* arr, int s, int e) {
-    // Base case
-    if (s >= e) {
-        return;
-    }
-
-    // Partition the array
-    int p = partition(arr, s, e);
-
-    // Sort the left and right parts
-    quickSort(arr, s, p - 1);
-    quickSort(arr, p + 1, e);
-}
 
 int main() {
-    int arr[] = {8, 1, 20, 30 , 6, 5, 60 , 5};
-    int s = 0;
-    int e = sizeof(arr) / sizeof(arr[0]) - 1;
+int n;
+cout<<"Enter the size:";
+cin>>n;
+vector<int>a;
+for (int i = 0; i < n; i++)
+{
+    int temp;
+    cin>>temp;
+    a.push_back(temp);
+}
+int start = 0;
+int end = a.size()-1;
+quickSort(a,start,end);
 
-    quickSort(arr, s, e);
+cout << "Sorted array: ";
+for(auto val:a){
+    cout<<val<<" ";
+}
 
-    for (int i = 0; i <= e; i++) {
-        cout << arr[i] << " ";
-    }
-
-    return 0;
+return 0;
 }
