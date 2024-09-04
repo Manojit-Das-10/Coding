@@ -2,6 +2,11 @@
 using namespace std;
 int main()
 {
-cout<<"I am Manojit";
+string n;
+cout<<"Enter:"<<endl;
+getline(cin,n);
+replace(n.begin(), n.end(), ' ', '\n');
+cout<<n;
+
 return 0;
 }
