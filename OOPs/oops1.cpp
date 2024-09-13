@@ -17,7 +17,7 @@ class Animal{
         this-> weight = 0;
         this-> age = 0;
         this-> name = "";
-        cout<<"Constructor called"<<endl;
+        // cout<<"Constructor called"<<endl;
     }
 
     // Parameterized Constructor
@@ -63,6 +63,10 @@ class Animal{
     void setWeight(int weight){
         this->weight = weight;
     }
+
+    ~Animal (){
+        cout<<"I am inside destructor"<<endl;
+    }
 };
 
 int main() {
@@ -97,12 +101,23 @@ int main() {
     // suresh -> eat();
     // suresh -> sleep();
 
-    Animal a(20);
-    Animal *b = new Animal(100,90,"kutta");
+    // Animal a(20);
+    // Animal *b = new Animal(100,90,"kutta");
 
-    Animal c = a;
+    // Animal c = a;
 
-    Animal animal1(c);
+    // Animal animal1(c);
+
+    cout<<"A obj creation"<<endl;
+    Animal a;
+    a.age = 5;
+
+    cout<<"B obj creation"<<endl;
+    Animal *b = new Animal();
+    b->age=12;
+
+    // free memory manually
+    delete b;
 
 return 0;
 }
