@@ -42,7 +42,7 @@ int main() {
     vector<vector<int>> pages(N);
     for (int i = 0; i < N; i++) {
         int L;
-        cout<<"Input L :";
+        cout<<"Input L :"<<endl;
         cin >> L;
         pages[i].resize(L);
         for (int j = 0; j < L; j++) {
