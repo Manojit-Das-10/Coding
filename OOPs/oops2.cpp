@@ -3,7 +3,7 @@ using namespace std;
 
 class Animal {
 
-    public:
+    protected:
         int age;
         int weight;
         
@@ -14,14 +14,18 @@ class Animal {
 
 };
 
-class Dog : public Animal{
-
+class Dog : private Animal{
+    public:
+        void print(){
+            cout<<this->age;
+        }
 };
 
 int main() {
 
 Dog d1;
-d1.eat();
+// d1.age;
+d1.print();
 
 return 0;
 }
