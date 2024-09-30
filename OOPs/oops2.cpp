@@ -1,31 +1,54 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-class Animal {
+// class Animal {
 
-    protected:
-        int age;
-        int weight;
+//     public:
+//         int age;
+//         int weight;
         
 
-        void eat(){
-            cout<<"Eating"<<endl;
-        }
+//         void eat(){
+//             cout<<"Eating"<<endl;
+//         }
 
+// };
+
+// class Dog : protected Animal{
+//     public:
+//         void print(){
+//             cout<<this->age;
+//         } 
+// };
+
+class human{
+
+    public:
+    string name;
+    int age;
+    int height;
+
+    void humanoff(){
+        cout<<"Human are living creature."<<endl;;
+    }
+
+    void humantalk(){
+        cout<<"Human can talk with each others."<<endl;
+    }
 };
 
-class Dog : private Animal{
-    public:
-        void print(){
-            cout<<this->age;
-        }
+class Female:public human{
+
 };
 
 int main() {
 
-Dog d1;
-// d1.age;
-d1.print();
+// Dog d1;
+// // d1.age;
+// d1.print();
+Female momi;
+momi.humantalk();
+momi.humanoff();
 
 return 0;
 }
