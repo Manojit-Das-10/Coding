@@ -19,7 +19,7 @@ int main() {
     Solution sol;
 
     // Test with sample vector and value of k
-    vector<int> nums = {1, 2, 3, 4, 5, 6, 7}; // Sample vector
+    vector<int> nums = {1, 2, 3, 4, 5, 6, 7}; 
     int k = 3; // Value of k
 
     // Call the rotate method

@@ -42,7 +42,17 @@ int main() {
     Solution sol;
 
     // Test with sample vector
-    vector<int> nums = {3, 0, 1}; // Sample vector
+    vector<int> nums; // Sample vector
+    int n;
+    cout<<"Enter the Range:";
+    cin>>n;
+    for (int i = 0; i < n; i++)
+    {
+        int temp;
+        cin>>temp;
+        nums.push_back(temp);
+    }
+    
     int missing = sol.missingNumber(nums);
 
     // Print the missing number
