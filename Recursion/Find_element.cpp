@@ -23,6 +23,7 @@ char key = 'a';
 vector<int>ans; 
 
 find_Element(arr,i,n,key,ans);
+
 cout<<"Printing answer:"<<endl;
 for(auto val:ans){
     cout<<val<<" index"<<endl;

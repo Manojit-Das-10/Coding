@@ -24,7 +24,7 @@ public:
 int main()
 {
 Solution sol;
-vector<int>nums{2,1,1,2};
+vector<int>nums{2,1,3,2};
 
 int ans = sol.rob(nums);
 cout<<"The max rob amount is: "<<ans;

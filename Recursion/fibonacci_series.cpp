@@ -19,7 +19,7 @@ int fibonacci(int n){
 int main()
 {
 int n;
-cout<<"Enter the term  you want to see:";
+cout<<"Enter the term you want to see:";
 cin>>n;
 
 int ans = fibonacci(n);

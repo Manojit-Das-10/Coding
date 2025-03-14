@@ -21,7 +21,7 @@ void lastOccRtoL(string&s, char&x , int i , int&ans){
     if(i < 0){
         return;
     }
-    // SOlve one case
+    // Solve one case
     if(s[i] == x){
         ans = i;
         return;
